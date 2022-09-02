@@ -1,5 +1,4 @@
 # Semaforos
-[![Trafic-Lights-bb.png](https://i.postimg.cc/KjTWpSXV/Trafic-Lights-bb.png)](https://postimg.cc/m1bVhngN)
 Simulacion de seamaforos
 
 ## Hardware y software necesarios
@@ -38,7 +37,7 @@ Simulacion de seamaforos
 - Dependiendo de la fase del semaforo, se cambia un estado a ```1``` (```State[c] = true```)
 - En un bucle for, se prenden las luces de trafico (```digitalWrite(Lights[i], State[i])```)
 - Si ha pasado el tiempo de espera (```millis() - Millis > Seconds[i] * 1000```), se cambia de fase (```c++```)
-[![Trafic-Lights-S-esquem-tico.png](https://i.postimg.cc/KzDFqMnB/Trafic-Lights-S-esquem-tico.png)](https://postimg.cc/vgTpDD2Z)
+[![Trafic-Lights.png](https://i.postimg.cc/Pxn3Nf5Z/Trafic-Lights.png)](https://postimg.cc/GBzJ5CYh)
 
 #### Multiples semaforos
 - En un bucle for, se definen todos los estados (```State```) en ```0``` para todos los semaforos, en ```1``` para todas las luces rojas y en ```0``` para el resto de luces de trafico.
@@ -47,7 +46,7 @@ Simulacion de seamaforos
 - Dependiendo de la fase del semaforo, se cambia un estado a ```1``` para las luces de trafico.
 - En un bucle for, se prenden las luces de trafico (```digitalWrite(Lights[i], State[x][i])```)
 - Si ha pasado el tiempo de espera (```millis() - Millis > Seconds[i] * 1000```), se cambia de fase (```c++```) y si se ha llegado a la ultima fase, se cambia de semaforo (```k *= 4 ; u *= 4```).
-[![Trafic-Lights-esquem-tico.png](https://i.postimg.cc/rwjPPNb8/Trafic-Lights-esquem-tico.png)](https://postimg.cc/WdD8DgTK)
+[![Trafic-Lights-S.png](https://i.postimg.cc/pVFzXN9Q/Trafic-Lights-S.png)](https://postimg.cc/WtshXHwt)
 
 
 
